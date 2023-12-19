@@ -29,7 +29,12 @@ function draw() {
   
   rule(yPs, bPs, -0.9);
   rule(bPs, yPs, -0.9);
-  
+  rule(yPs, bPs, -0.9);
+  rule(bPs, yPs, -0.9);
+  rule(yPs, bPs, -0.9);
+  rule(bPs, yPs, -0.9);
+  rule(yPs, bPs, -0.9);
+  rule(bPs, yPs, -0.9);
   for (let i=0; i<particles.length; i++) {
     let p = particles[i];
     p.update();

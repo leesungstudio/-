@@ -27,6 +27,9 @@ class Particle {
     
     show() {
       fill(this.c);
+      print(this.vel.x)
+      this.w = (this.vel.x+this.vel.y) /2
+
       circle(this.pos.x, this.pos.y, this.w);
     }
   }
