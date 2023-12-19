@@ -2,7 +2,8 @@ let particles = [];
 let rPs = [];
 let yPs = [];
 let bPs = [];
-
+let t, x = 0  ;
+let t2 = 0;
 
 function setup() {
   createCanvas(400, 400);
@@ -16,25 +17,27 @@ function setup() {
 
 function draw() {
   background(0);
+
+  t = sin(x);
+t2 = sin((3.14/ 2) + x);
+x += 1;
+ 
+
+  rule(rPs, rPs, t2);
+  rule(yPs, yPs, t2);
+  rule(bPs, bPs, t2);
+
+
+
+  rule(rPs, rPs, t);
+  rule(yPs, yPs, t);
+  rule(bPs, bPs, t);
+
+
   
-  rule(rPs, rPs, 2);
-  rule(yPs, rPs, 0.9);
-  rule(bPs, rPs, 0.7);
   
-  rule(rPs, rPs, 0.9);
-  rule(yPs, rPs, 0.9);
-  
-  rule(rPs, rPs, 0.9);
-  rule(bPs, rPs, 0.9);
-  
-  rule(yPs, bPs, 0.9);
-  rule(bPs, yPs, 0.9);
-  rule(yPs, bPs, 0.9);
-  rule(bPs, yPs, 0.9);
-  rule(yPs, bPs, 0.9);
-  rule(bPs, yPs, 0.9);
-  rule(yPs, bPs, 0.9);
-  rule(bPs, yPs, 0.9);
+ 
+ 
 
   
   for (let i=0; i<particles.length; i++) {
