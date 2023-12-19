@@ -17,24 +17,24 @@ function setup() {
 function draw() {
   background(0);
   
-  rule(rPs, rPs, -0.2);
+  rule(rPs, rPs, 2);
   rule(yPs, rPs, 0.9);
-  rule(bPs, rPs, -0.7);
+  rule(bPs, rPs, 0.7);
   
-  rule(rPs, rPs, -0.9);
+  rule(rPs, rPs, 0.9);
   rule(yPs, rPs, 0.9);
   
   rule(rPs, rPs, 0.9);
-  rule(bPs, rPs, -0.9);
+  rule(bPs, rPs, 0.9);
   
-  rule(yPs, bPs, -0.9);
-  rule(bPs, yPs, -0.9);
-  rule(yPs, bPs, -0.9);
-  rule(bPs, yPs, -0.9);
-  rule(yPs, bPs, -0.9);
-  rule(bPs, yPs, -0.9);
-  rule(yPs, bPs, -0.9);
-  rule(bPs, yPs, -0.9);
+  rule(yPs, bPs, 0.9);
+  rule(bPs, yPs, 0.9);
+  rule(yPs, bPs, 0.9);
+  rule(bPs, yPs, 0.9);
+  rule(yPs, bPs, 0.9);
+  rule(bPs, yPs, 0.9);
+  rule(yPs, bPs, 0.9);
+  rule(bPs, yPs, 0.9);
 
   
   for (let i=0; i<particles.length; i++) {
