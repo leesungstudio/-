@@ -19,8 +19,8 @@ function draw() {
   background(0);
 
   t = sin(x);
-t2 = sin((3.14/ 2) + x);
-x += 1;
+  t2 = sin((3.14/ 2) + x);
+  x += 1;
  
 
   rule(rPs, rPs, t2);
